@@ -36,7 +36,7 @@ import com.projetointegrado.gerenciamentobolvino.repositories.VendaRepository;
 @SpringBootApplication
 public class GerenciamentoBolvinoBackendApplication implements CommandLineRunner{
 
-	@Autowired
+	/*@Autowired
 	private AnimalRepository animalrepository;
 	@Autowired
 	private PesoRepository pesorepository;
@@ -59,7 +59,7 @@ public class GerenciamentoBolvinoBackendApplication implements CommandLineRunner
 	@Autowired
 	private UsuarioRepository usuariorepository;
 	@Autowired
-	private VendaRepository vendarepository;
+	private VendaRepository vendarepository;*/
 	
 	public static void main(String[] args) {
 		SpringApplication.run(GerenciamentoBolvinoBackendApplication.class, args);
@@ -68,7 +68,7 @@ public class GerenciamentoBolvinoBackendApplication implements CommandLineRunner
 	@Override
 	public void run(String... args) throws Exception {
 
-        Animal ani1 = new Animal(null,"02PG","Nelore");
+        /*Animal ani1 = new Animal(null,"02PG","Nelore");
         Medicacao medic1 = new Medicacao(null, "12 meses", "Vitamina", "L01");
         Lote lot1 = new Lote(null, "15/10/2021", "Lote Brasileiro");
         Pasto past1 = new Pasto(null, "15/10/2021", "Pasto Brasileiro");
@@ -112,7 +112,7 @@ public class GerenciamentoBolvinoBackendApplication implements CommandLineRunner
         this.statuspastoandloterepository.saveAll(Arrays.asList(statusPastoAndLote));
         this.statusracaoandloterepository.saveAll(Arrays.asList(statusRacaoAndLote));
         this.usuariorepository.saveAll(Arrays.asList(user1));
-        this.vendarepository.saveAll(Arrays.asList(vend1));
+        this.vendarepository.saveAll(Arrays.asList(vend1));*/
 	}
 
 }
