@@ -1,8 +1,6 @@
 package com.projetointegrado.gerenciamentobolvino.resources;
 
-import com.projetointegrado.gerenciamentobolvino.domain.Animal;
 import com.projetointegrado.gerenciamentobolvino.domain.Usuario;
-import com.projetointegrado.gerenciamentobolvino.dtos.AnimalDTO;
 import com.projetointegrado.gerenciamentobolvino.dtos.UsuarioDTO;
 import com.projetointegrado.gerenciamentobolvino.services.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +12,7 @@ import java.net.URI;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping(value = "/usuario")
 public class UsuarioResource {

@@ -1,9 +1,7 @@
 package com.projetointegrado.gerenciamentobolvino.resources;
 
 
-import com.projetointegrado.gerenciamentobolvino.domain.Animal;
 import com.projetointegrado.gerenciamentobolvino.domain.Medicacao;
-import com.projetointegrado.gerenciamentobolvino.dtos.AnimalDTO;
 import com.projetointegrado.gerenciamentobolvino.dtos.MedicacaoDTO;
 import com.projetointegrado.gerenciamentobolvino.services.MedicacaoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +13,7 @@ import java.net.URI;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping(value = "/medicacao")
 public class MedicacaoResource {
